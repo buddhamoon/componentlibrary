@@ -4,11 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>页面列表表格渲染组件 - 方案：1</title>
+    <link rel="stylesheet" href="./public/css/hy_first_table.css">
+    <style>
+        /* 测试样式代码 */
+        .testTable {
+            display: block;
+            width: 600px;
+            /* border: 1px solid #cccccc; */
+        }
+    </style>
 </head>
 <body>
-    
+ 
+<!-- 概念结构元素 -->
+<div class="testTable">
+    <div class="hy-firsttable">
+        <div class="hy-table-content">
+            <table>
+                <thead>
+                    <tr>
+                        <td>姓名</td>
+                        <td>性别</td>
+                        <td>年龄</td>
+                        <td>爱好</td>
+                        <td>电话</td>
+                        <td>地址</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>江小夏</td>
+                        <td>女</td>
+                        <td>19</td>
+                        <td>羽毛球、读书、散步</td>
+                        <td>17700000001</td>
+                        <td>北京市海淀区线下路1889号春风小区</td>
+                    </tr>
+                    <tr>
+                        <td>周鹏</td>
+                        <td>男</td>
+                        <td>39</td>
+                        <td>足球、篮球、电子游戏</td>
+                        <td>17700000002</td>
+                        <td>北京市海淀区线下路1899号春风小区3#809室</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="hy-table-paging"></div>
+    </div>
+</div>
 
 
-    
+<!-- 渲染结构元素 -->
+<div id="component"></div>
+
+
+<script src="./public/js/hy_first_table.js"></script>
+
 </body>
 </html>

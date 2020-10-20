@@ -19,6 +19,11 @@
 <!-- 概念结构元素 -->
 <div class="testTable">
     <div class="hy-firsttable">
+        <div class="table-seach">
+            <input type="text">
+            <span></span>
+        </div>
+        <div class="table-export"></div>
         <div class="hy-table-content">
             <table>
                 <thead>
@@ -68,14 +73,44 @@
         tltleColor:'',
         exportDiv:true,
         seachDiv:true,
+        limit:10,
+        currentPage:1,
+        pageSize:10,
         dataList:[
+            [
             {
-                name:'',
-                link:'',
+                title:'姓名',
+                value:'周冬雨',
+                width:'',
+                link:false,
                 url:'',
-                target:'',
-                
-            },
+                target:'',  
+            },{
+                title:'性别',
+                value:'女',
+                width:'',
+                link:false,
+                url:'',
+                target:'',  
+            }
+            ],
+            [
+            {
+                title:'姓名',
+                value:'王亚真',
+                width:'',
+                link:false,
+                url:'',
+                target:'',  
+            },{
+                title:'性别',
+                value:'男',
+                width:'',
+                link:false,
+                url:'',
+                target:'',  
+            }
+            ]
         ]
     }
 </script>
